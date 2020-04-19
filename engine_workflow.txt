@@ -1,0 +1,12 @@
+- [root] create index.html
+- [index.html] add index.js to index.html
+- [root] create index.js
+- [index.js] add scripts-injector to index.js
+- [root] create game.js
+- [index.js] add game.js to _scriptObject.statics
+- [root] create scene-manager.js
+- [index.js] add scene-manager.js to _scriptObject.others
+- [root] create main.js (default state was alread added to _scriptObject)
+- [main.js] test scene-manager
+- [root] create ui-renderer.js
+- [index.js] add ui-renderer.js to _scriptObject.others
