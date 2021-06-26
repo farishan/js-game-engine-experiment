@@ -1,9 +1,10 @@
 "use strict";
 
-function ScriptInjector() {
+function ScriptInjector(options = {}) {
+    const { useLogger } = options;
     this.name = '[SCRIPTS-INJECTOR]';
     this.slug = 'scripts-injector';
-    this.logger = true;
+    this.logger = useLogger === undefined ? false : useLogger;
 
     this.staticContainer = document.createElement('div');
     this.dynamicContainer = document.createElement('div');
