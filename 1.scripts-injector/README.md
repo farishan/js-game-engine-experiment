@@ -1,3 +1,5 @@
+Deprecated. Use this instead: [@farishan/script-loader](https://www.npmjs.com/package/@farishan/script-loader).
+
 # Scripts Injector
 
 ### Features
