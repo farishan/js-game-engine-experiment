@@ -2,6 +2,7 @@
 
 function ScriptInjector() {
     this.name = '[SCRIPTS-INJECTOR]';
+    this.slug = 'scripts-injector';
     this.logger = true;
 
     this.staticContainer = document.createElement('div');
@@ -11,6 +12,7 @@ function ScriptInjector() {
         if (this.logger) {
             console.log(`${this.name} `, _scriptObject)
             var logWindow = document.createElement('div');
+            logWindow.id = this.slug+'_'+'log-window';
             logWindow.innerHTML = 'Script Object :'+JSON.stringify(scriptObject);
             logWindow.setAttribute('style', 'color:darkgray;font-size:0.8em')
             this.staticContainer.appendChild(logWindow);
@@ -22,10 +24,10 @@ function ScriptInjector() {
 
     this.setup = () => {
         this.staticContainer.style.position = 'absolute';
-        this.staticContainer.id = 'static-scripts-container';
+        this.staticContainer.id = this.slug+'_'+'static-scripts-container';
         document.body.appendChild(this.staticContainer);
         this.dynamicContainer.style.position = 'absolute';
-        this.dynamicContainer.id = 'dynamic-scripts-container';
+        this.dynamicContainer.id = this.slug+'_'+'dynamic-scripts-container';
         document.body.appendChild(this.dynamicContainer);
     }
 
@@ -100,6 +102,9 @@ const _scriptObject = {
         'static2',
         'other1',
         'other2'
+    ],
+    dynamics: [
+        'dynamic1'
     ],
     main: 'main'
 };

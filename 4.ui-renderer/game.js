@@ -56,7 +56,8 @@ var _gameConfig = {
         {
             id: 2,
             name: 'Area 1',
-            navs: [1]
+            navs: [1],
+            scripts: ['area1']
         },
         {
             id: 3,

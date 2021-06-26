@@ -37,7 +37,7 @@ function UIRenderer(){
 
                 // 5. Add scene's scripts
                 if(sceneObject.scripts && sceneObject.scripts.length > 0){
-                    this.scriptInjector.injectScripts('scene',sceneObject.scripts, function(){
+                    this.scriptInjector.injectScripts(false, sceneObject.scripts, function(){
                     });
                 }
 
