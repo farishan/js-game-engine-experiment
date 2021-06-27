@@ -1,3 +1,5 @@
+Deprecated. See [https://github.com/farishan/router](https://github.com/farishan/router)
+
 # Game Injector
 
 ### Dependencies
